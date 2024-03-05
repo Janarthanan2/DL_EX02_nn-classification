@@ -109,7 +109,9 @@ categories_list=[['Male','Female'],
 enc = OrdinalEncoder(categories = categories_list)
 
 cust_1=df_cleaned.copy()
-cust_1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']]=enc.fit_transform(cust_1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']])
+cust_1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']]=enc.fit_transform(cust_1[
+                                                                                ['Gender','Ever_Married','Graduated','Profession','Spending_Score']
+                                                                             ])
 
 cust_1.dtypes
 
@@ -145,7 +147,9 @@ sns.pairplot(cust_1)
 cust_1.describe()
 cust_1['Segmentation'].unique()
 
-X=cust_1[['Gender','Ever_Married','Age','Graduated','Profession','Work_Experience','Spending_Score','Family_Size']].values
+X=cust_1[['Gender','Ever_Married','Age','Graduated',
+          'Profession','Work_Experience',
+          'Spending_Score','Family_Size']].values
 
 y1 = cust_1[['Segmentation']].values
 one_hot_enc = OneHotEncoder()
