@@ -53,9 +53,9 @@ Using the DL model predict for some random inputs
 
 ## PROGRAM
 
-### Name: JANARTHANAN V K
-### Register Number: 212222230051
-
+** Name: JANARTHANAN V K**
+** Register Number: 212222230051
+**
 ```python
 import pandas as pd
 from sklearn.model_selection import train_test_split
