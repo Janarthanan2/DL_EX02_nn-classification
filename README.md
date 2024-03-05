@@ -53,7 +53,7 @@ Using the DL model predict for some random inputs
 
 ## PROGRAM
 
-**Name: JANARTHANAN V K**
+**Name: JANARTHANAN V K** <br>
 **Register Number: 212222230051**
 
 ```python
